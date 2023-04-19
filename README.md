@@ -32,3 +32,6 @@ Three Pairs [2,2,3,3,4,4] (800)
 
 Straight [1,2,3,4,5,6] (1200)
 
+## local test & run
+* run local with `npm run build && npm start`
+* test with `npm test` 

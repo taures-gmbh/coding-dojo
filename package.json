@@ -2,9 +2,11 @@
   "name": "coding-dojo",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "build/main/index.js",
+  "type": "commonjs",
   "scripts": {
-    "build": "rimraf ./build && tsc",
+    "build": "rimraf ./build && tsc -p tsconfig-build.json",
+    "start": "node .",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },

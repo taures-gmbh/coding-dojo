@@ -1,4 +1,4 @@
-import {add} from "../src/add";
+import {add} from "../main/add";
 
 describe('testing add function', () => {
     test('empty string should result in zero', () => {

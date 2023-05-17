@@ -1,37 +1,24 @@
-# coding-dojo: Greed
+# Ringbuffer
 
-## Greed (Dice Game)
+Entwickle eine Klasse, die einen Ringbuffer implementiert.
 
-http://en.wikipedia.org/wiki/Greed_%28dice_game%29
+An einen Ringbuffer können Werte „hinten“ angehängt werden wie an eine Queue (Add()). Und sie können „vorne“ entnommen werden wie aus einer Queue (
+Take()). Allerdings hat der Ringbuffer eine begrenzte Kapazität (Size()). Wenn die ausgeschöpft ist, werden Werte „am Anfang“ „überschrieben“, d.h.
+dann haben neue Werte Vorrang vor alten.
 
-Write a class Greed with a score() method that accepts an array of die values (up to 6). This method will take the final dice values, the outcome 
-of one turn (after finishing all rolls of the current player).
+Das Interface der Klasse soll so aussehen:
 
-Scoring rules are as follows:
+``` java
+class Ringbuffer<T> {
+Ringbuffer(int size) {...}
 
-A single one (100)
-A single five (50)
-Triple ones [1,1,1] (1000)
-Triple twos [2,2,2] (200)
-Triple threes [3,3,3] (300)
-Triple fours [4,4,4] (400)
-Triple fives [5,5,5] (500)
-Triple sixes [6,6,6] (600)
+	void Add(T value) {...} 
+	T Take() {...} // nimmt das älteste Element aus dem Buffer
+	int Count() {...} // Anzahl ungelesene Elemente (<= Size())
+	int Size() {...} // Größe des Ringbuffers
+}
+```
 
+![img.png](img.png)
 
-Note that the scorer should work for any number of dice up to 6.
-
-### Additional Goals
-Four-of-a-kind (Multiply Triple Score by 2)
-
-Five-of-a-kind (Multiply Triple Score by 4)
-
-Six-of-a-kind (Multiply Triple Score by 8)
-
-Three Pairs [2,2,3,3,4,4] (800)
-
-Straight [1,2,3,4,5,6] (1200)
-
-## local test & run
-* run local with `npm run build && npm start`
-* test with `npm test` 
+Quelle: https://kurse.ccd-akademie.de/ringbuffer/

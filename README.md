@@ -1,24 +1,17 @@
-# Ringbuffer
+## Galgenmännchen
 
-Entwickle eine Klasse, die einen Ringbuffer implementiert.
 
-An einen Ringbuffer können Werte „hinten“ angehängt werden wie an eine Queue (Add()). Und sie können „vorne“ entnommen werden wie aus einer Queue (
-Take()). Allerdings hat der Ringbuffer eine begrenzte Kapazität (Size()). Wenn die ausgeschöpft ist, werden Werte „am Anfang“ „überschrieben“, d.h.
-dann haben neue Werte Vorrang vor alten.
+# Class Kata „Galgenmännchen“
+Schreibe eine Klasse Galgenmännchen. Über den Konstruktor erhält die Instanz das gesuchte Wort als String. Ferner verfügt die Klasse über eine Methode RateBuchstabe. Die Methode erhält ein Zeichen als Eingabe und überprüft, an welchen Stellen innerhalb des gesuchten Wortes das Zeichen vorkommt. Die Methode gibt jeweils den bis zu diesem Zeitpunkt erratenen Bestandteil des Worts zurück.
 
-Das Interface der Klasse soll so aussehen:
+public class Galgenmännchen {
 
-``` java
-class Ringbuffer<T> {
-Ringbuffer(int size) {...}
+public Galgenmännchen(string gesuchtesWort) { ... }
 
-	void Add(T value) {...} 
-	T Take() {...} // nimmt das älteste Element aus dem Buffer
-	int Count() {...} // Anzahl ungelesene Elemente (<= Size())
-	int Size() {...} // Größe des Ringbuffers
+public string RateBuchstabe(char buchstabe) { ... }
+
 }
-```
 
-![img.png](img.png)
+Folgende Tabelle zeigt den Verlauf an einem Beispiel.
 
-Quelle: https://kurse.ccd-akademie.de/ringbuffer/
+![img_1.png](img_1.png)

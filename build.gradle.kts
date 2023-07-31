@@ -14,6 +14,24 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
-tasks.test {
-    useJUnitPlatform()
+tasks{
+    test {
+        useJUnitPlatform()
+    }
+
+    // Definiere einen eigenen 'run' Task
+    register("run", JavaExec::class) {
+        group = "run"
+        mainClass.set("org.example.Main") // Ersetze "dein.package.name.Hauptklasse" durch den vollständigen Namen deiner Hauptklasse
+        classpath = sourceSets["main"].runtimeClasspath
+        args = listOf() // Füge hier Argumente hinzu, falls benötigt
+        standardInput = System.`in`
+
+    }
+
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }

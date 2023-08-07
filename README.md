@@ -1,38 +1,23 @@
+# ROT-13 
 
+## Function Kata „ROT-13“
 
-# Aufgabe: Römische Zahlen umwandeln
+Schreibe eine Funktion, die einen Text mit dem Verfahren ROT-13 verschlüsselt.
 
-Schreibe eine Klasse RomanNumberConverter.
-Die Klasse soll eine Funktion beinhalten, die eine römische Zahl in eine dezimale Zahl umwandelt.
+Bei ROT-13 wird jeder Buchstabe des zu verschlüsselnden Textes durch den ersetzt, der 13 Stellen weiter hinten im Alphabet liegt. Sollte dabei über das Alphabetende hinausgegriffen werden, geht es am Anfang weiter.
 
-Römische Zahlen bestehen aus einer Kombination der folgenden Symbole:
+Beispiel: Hello, World -> URYYB, JBEYQ
 
+Aus „e“ wird „R“ und aus „W“ wird „J“. Kleinbuchstaben werden in Großbuchstaben verwandelt.
 
-| Symbol | Wert |
-|--------|------|
-| I      | 1    |
-| V      | 5    |
-| X      | 10   |
-| L      | 50   |
-| C      | 100  |
-| D      | 500  |
-| M      | 1000 |
+Umlaute müssen vor Verschlüsselung durch Buchstabenkombinationen ersetzt werden: „Ö“ = „OE“, „Ä“ = „AE“, „Ü“ = „UE“, „ß“ = „SS“.
 
+Zeichen die keine Buchstaben sind, werden nicht verschlüsselt.
 
-### Regeln:
+### Variation #1
+Mache den Versatz (hier: 13) variabel.
 
-* Die Symbole werden von links nach rechts in absteigender Reihenfolge gelesen.
-* Wenn ein kleineres Zeichen vor einem größeren steht, subtrahierst du das kleinere. Zum Beispiel: IV ist 4.
-* Wenn das kleinere Zeichen nach einem größeren steht, addierst du das kleinere. Zum Beispiel: VII ist 7.
+### Variation #2
+Verschlüssele auch Ziffern. Nimm dafür an, dass Ziffern und Großbuchstaben eine Einheit bilden: 0123456789ABCDEFGH…XYZ.
 
-### Beispiele:
-
-* "III" sollte 3 zurückgeben.
-* "IV" sollte 4 zurückgeben.
-* "IX" sollte 9 zurückgeben.
-* "LVIII" sollte 58 zurückgeben, da L = 50, V = 5, III = 3.
-* "MCMXCIV" sollte 1994 zurückgeben, da M = 1000, CM = 900, XC = 90 und IV = 4.
-
-
-#### Zusatzfrage:
-Implementiere die entgegengesetzte Funktion, die eine dezimale Zahl in eine römische Zahl umwandelt.
+Aus „0“ wird dann mit Versatz 13 „D“ und aus „Z“ wird dann nicht mehr „M“, sondern „C“.

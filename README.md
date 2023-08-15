@@ -1,23 +1,37 @@
-# ROT-13 
+# coding-dojo: Greed
 
-## Function Kata „ROT-13“
+## Greed (Dice Game)
 
-Schreibe eine Funktion, die einen Text mit dem Verfahren ROT-13 verschlüsselt.
+http://en.wikipedia.org/wiki/Greed_%28dice_game%29
 
-Bei ROT-13 wird jeder Buchstabe des zu verschlüsselnden Textes durch den ersetzt, der 13 Stellen weiter hinten im Alphabet liegt. Sollte dabei über das Alphabetende hinausgegriffen werden, geht es am Anfang weiter.
+Write a class Greed with a score() method that accepts an array of die values (up to 6). This method will take the final dice values, the outcome 
+of one turn (after finishing all rolls of the current player).
 
-Beispiel: Hello, World -> URYYB, JBEYQ
+Scoring rules are as follows:
 
-Aus „e“ wird „R“ und aus „W“ wird „J“. Kleinbuchstaben werden in Großbuchstaben verwandelt.
+A single one (100)
+A single five (50)
+Triple ones [1,1,1] (1000)
+Triple twos [2,2,2] (200)
+Triple threes [3,3,3] (300)
+Triple fours [4,4,4] (400)
+Triple fives [5,5,5] (500)
+Triple sixes [6,6,6] (600)
 
-Umlaute müssen vor Verschlüsselung durch Buchstabenkombinationen ersetzt werden: „Ö“ = „OE“, „Ä“ = „AE“, „Ü“ = „UE“, „ß“ = „SS“.
 
-Zeichen die keine Buchstaben sind, werden nicht verschlüsselt.
+Note that the scorer should work for any number of dice up to 6.
 
-### Variation #1
-Mache den Versatz (hier: 13) variabel.
+### Additional Goals
+Four-of-a-kind (Multiply Triple Score by 2)
 
-### Variation #2
-Verschlüssele auch Ziffern. Nimm dafür an, dass Ziffern und Großbuchstaben eine Einheit bilden: 0123456789ABCDEFGH…XYZ.
+Five-of-a-kind (Multiply Triple Score by 4)
 
-Aus „0“ wird dann mit Versatz 13 „D“ und aus „Z“ wird dann nicht mehr „M“, sondern „C“.
+Six-of-a-kind (Multiply Triple Score by 8)
+
+Three Pairs [2,2,3,3,4,4] (800)
+
+Straight [1,2,3,4,5,6] (1200)
+
+## local test & run
+* run local with `npm run build && npm start`
+* test with `npm test` 

@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "build": "rimraf ./build && tsc -p tsconfig-build.json",
-    "start": "node ../coding-dojo-new",
+    "start": "node ../coding-dojo",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },

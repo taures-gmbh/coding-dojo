@@ -1,23 +1,23 @@
-# ROT-13 
+# Poker auswerten 
 
-## Function Kata „ROT-13“
+## Aufgabe
+Schreibe eine Klasse "PokerAuswerter", die für eine freie Anzahl von Spielern auswertet, was die aktuell höchste Hand
+dieses Spielers ist.
 
-Schreibe eine Funktion, die einen Text mit dem Verfahren ROT-13 verschlüsselt.
+Nach Texas Hold'Em Regeln bekommt zunächst jeder Spieler zwei zufällige, persönliche Karten. Dann wird nach einer
+Bietrunde (die für dieses Dojo ignoriert werden kann) der sogenannte River aufgedeckt. Das heißt, der Dealer legt drei
+Karten vom Stapel offen auf den Tisch.
 
-Bei ROT-13 wird jeder Buchstabe des zu verschlüsselnden Textes durch den ersetzt, der 13 Stellen weiter hinten im Alphabet liegt. Sollte dabei über das Alphabetende hinausgegriffen werden, geht es am Anfang weiter.
+Die Auswertung soll für genau diese Situation erfolgen, also 2 Karten in der Hand eines Spielers, 3 auf dem Tisch.
+Die zentrale Methode bekommt die Informationen über genau diese Karten und gibt die höchste mögliche Hand des Spielers
+zurück. Spielfarben können zur Vereinfachung ignoriert werden. 
 
-Beispiel: Hello, World -> URYYB, JBEYQ
+## Die Spielkarten
+Poker wird mit einem Blatt aus 52 Karten gespielt, je 13
+Karten der vier Spielfarben Kreuz, Herz, Pik, Karo. Die
+Wertigkeiten sind aufsteigend: 2, 3, 4, 5, 6, 7, 8, 9, 10,
+Bube, Dame, König und Ass. Die Spielfarbe ist für die
+Gewinnermittlung irrelevant.
 
-Aus „e“ wird „R“ und aus „W“ wird „J“. Kleinbuchstaben werden in Großbuchstaben verwandelt.
-
-Umlaute müssen vor Verschlüsselung durch Buchstabenkombinationen ersetzt werden: „Ö“ = „OE“, „Ä“ = „AE“, „Ü“ = „UE“, „ß“ = „SS“.
-
-Zeichen die keine Buchstaben sind, werden nicht verschlüsselt.
-
-### Variation #1
-Mache den Versatz (hier: 13) variabel.
-
-### Variation #2
-Verschlüssele auch Ziffern. Nimm dafür an, dass Ziffern und Großbuchstaben eine Einheit bilden: 0123456789ABCDEFGH…XYZ.
-
-Aus „0“ wird dann mit Versatz 13 „D“ und aus „Z“ wird dann nicht mehr „M“, sondern „C“.
+## Mögliche Hände
+![hand-rankings.jpg](readme%2Fhand-rankings.jpg)

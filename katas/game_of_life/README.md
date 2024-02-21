@@ -1,9 +1,13 @@
 # Game of Life
 
 Eine sehr interessante Fingerübung als Kata: Game of Life.
-Das grundsätzliche Ziel ist die Darstellung von Zellen in einem regelmäßigen Gitter.
+Das grundsätzliche Ziel ist die Berechnung von Zellen in einem regelmäßigen Gitter.
 
-![Gospers_glider_gun.gif](assets%2FGospers_glider_gun.gif)
+![Gospers_glider_gun.gif](Gospers_glider_gun.gif)
+
+Zellen haben nur zwei Zustände: Lebendig oder tot. Für dieses Kata berechnen wir eine Nachfolgegeneration. Die grafische Darstellung des Gitters ist out of scope.
+
+
 
 Unerwartete Komplexität lässt sich aus diesen 4 einfachen Regeln erzeugen:
 
@@ -16,5 +20,5 @@ Aufgabe des Katas ist es, Code zu schreiben, der eine Nachfolgegeneration durch 
 
 ## Hinweise
 * "Benachbart" bedeutet horizontal, vertikal, oder diagonal angrenzend
-* Zur Vereinfachung der Testfälle beschränken wir das Gitter auf 3x3 Zellen, das Gitter selbst soll aber in Höhe und BReite variabel sein
+* Zur Vereinfachung der Testfälle beschränken wir das Gitter auf 3x3 Zellen. Das Gitter selbst soll aber so designed sein, dass in Höhe und Breite variabel sind
 * Die Zellen außerhalb des Gitters zählen als "tot" 

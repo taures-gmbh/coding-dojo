@@ -1,4 +1,4 @@
-# Coding-Dojo
+# TauRes Coding-Dojo
 
 Hier sind die Katas für unsere Coding-Interviews gesammelt.
 

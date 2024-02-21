@@ -21,7 +21,7 @@ Die Wertigkeiten sind aufsteigend: 2, 3, 4, 5, 6, 7, 8, 9, 10, Bube, Dame, Köni
 
 ## Mögliche Hände
 
-![hand-rankings.jpg](/Users/j_wilmans/Documents/work/taures/bewerbung_coding-dojo/readme%2Fhand-rankings.jpg)
+![hand-rankings.jpg](hand-rankings.jpg)
 
 ## Ausbaustufe
 

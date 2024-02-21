@@ -1,23 +1,34 @@
-# ROT-13 
+# Coding-Dojo
 
-## Function Kata „ROT-13“
+Hier sind die Katas für unsere Coding-Interviews gesammelt.
 
-Schreibe eine Funktion, die einen Text mit dem Verfahren ROT-13 verschlüsselt.
 
-Bei ROT-13 wird jeder Buchstabe des zu verschlüsselnden Textes durch den ersetzt, der 13 Stellen weiter hinten im Alphabet liegt. Sollte dabei über das Alphabetende hinausgegriffen werden, geht es am Anfang weiter.
 
-Beispiel: Hello, World -> URYYB, JBEYQ
+## Gewünschte Struktur
 
-Aus „e“ wird „R“ und aus „W“ wird „J“. Kleinbuchstaben werden in Großbuchstaben verwandelt.
+* README.md (liest du gerade)
+* katas (enthält die jeweiligen Katas)
+  * kata_1
+    * README.md (enthält den Text des Katas)
+    * image1.png (optional: Bilder, falls notwendig / hilfreich / cool)
+    * data.csv (optional: Datendateien, die für das Kata benötigt werden könnten)
+    * ...
+  * kata_2
+  * ...
+* projects (enthält Basisprojekte für die Sprachen, in denen Katas durchgeführt werden können)
+  * java_gradle
+  * typescript
+  * dart
+  * ...
 
-Umlaute müssen vor Verschlüsselung durch Buchstabenkombinationen ersetzt werden: „Ö“ = „OE“, „Ä“ = „AE“, „Ü“ = „UE“, „ß“ = „SS“.
+Diese Struktur sollte es ermöglichen, sowohl alle Katas für alle Sprachen einfach umsetzen zu können, als auch die technischen Projekte mit weniger Aufwand zu pflegen.
 
-Zeichen die keine Buchstaben sind, werden nicht verschlüsselt.
+## Branching
 
-### Variation #1
-Mache den Versatz (hier: 13) variabel.
+Sollte für die meisten Katas gar nicht mehr nötig sein, da die meisten von ihnen schon mit der README und dem jeweiligen Basisprojekt umsetzbar sein sollten. Möchte man für ein bestimmtes Kata allerdings doch Code vorbereiten (z.B. um das Einlesen von Beispieldaten bereits vorzubereiten) bitte folgendes Namensschema einhalten: `<kata_name>/<project>`. Beispiel: `kata_2/java_gradle`.
 
-### Variation #2
-Verschlüssele auch Ziffern. Nimm dafür an, dass Ziffern und Großbuchstaben eine Einheit bilden: 0123456789ABCDEFGH…XYZ.
+Abgesehen davon darf natürlich jeder gerne eigene Branches mit Beispiellösungen forken 🤓.
 
-Aus „0“ wird dann mit Versatz 13 „D“ und aus „Z“ wird dann nicht mehr „M“, sondern „C“.
+
+
+Happy coding!

@@ -5,6 +5,7 @@ build/
 !**/src/test/**/build/
 
 **/node_modules/
+**/coverage/
 
 ### IntelliJ IDEA ###
 .idea

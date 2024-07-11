@@ -1,9 +1,10 @@
 import unittest
+from src.main.aufgabe import Aufgabe
 
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+        self.assertEqual(True, False)
 
 
 if __name__ == '__main__':

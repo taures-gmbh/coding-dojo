@@ -5,7 +5,7 @@ Das grundsätzliche Ziel ist die Berechnung von Zellen in einem regelmäßigen G
 
 ![Gospers_glider_gun.gif](Gospers_glider_gun.gif)
 
-Zellen haben nur zwei Zustände: Lebendig oder tot. Für dieses Kata berechnen wir eine Nachfolgegeneration. Die grafische Darstellung des Gitters ist out of scope.
+Zellen haben nur zwei Zustände: Lebendig oder tot. Für dieses Kata berechnen wir eine Nachfolgegeneration. Die grafische Darstellung des Gitters ist nicht Teil der Aufgabe, es geht nur um die Berechnung.
 
 
 
@@ -20,5 +20,5 @@ Aufgabe des Katas ist es, Code zu schreiben, der eine Nachfolgegeneration durch 
 
 ## Hinweise
 * "Benachbart" bedeutet horizontal, vertikal, oder diagonal angrenzend
-* Zur Vereinfachung der Testfälle beschränken wir das Gitter auf 3x3 Zellen. Das Gitter selbst soll aber so designed sein, dass in Höhe und Breite variabel sind
+* Zur Vereinfachung der Testfälle beschränken wir das Gitter auf 3x3 Zellen. Das Gitter selbst soll aber so designed sein, dass Höhe und Breite variabel einstellbar sind
 * Die Zellen außerhalb des Gitters zählen als "tot" 

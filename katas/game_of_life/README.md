@@ -1,4 +1,4 @@
-![Gospers_glider_gun.gif](Gospers_glider_gun.gif)
+![Gospers_glider_gun.gif](gameoflife.png)
 
 Eine sehr interessante Fingerübung als Kata: Game of Life.
 Das grundsätzliche Ziel ist die Berechnung von Zellen in einem regelmäßigen Gitter.

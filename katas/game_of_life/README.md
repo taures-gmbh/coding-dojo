@@ -1,17 +1,16 @@
 ![Gospers_glider_gun.gif](gameoflife.png)
 
-Eine sehr interessante Fingerübung als Kata: Game of Life.
-Das grundsätzliche Ziel ist die Berechnung von Zellen in einem regelmäßigen Gitter.
+Eine sehr interessante Fingerübung als Kata: Conway's Game of Life.
 
-Zellen haben nur zwei Zustände: Lebendig oder tot. Für dieses Kata berechnen wir eine Nachfolgegeneration. Die grafische Darstellung des Gitters ist nicht Teil der Aufgabe, es geht nur um die Berechnung.
+Mit 4 einfachen Regeln für "Zellwachstum" lässt sich unerwartete Komplexität erzeugen,
+indem unterschiedliche Generationen von "Zellwachstum" simuliert werden. Diese "Zellen"
+haben nur zwei Zustände: Lebendig oder tot. Die grafische Darstellung des Gitters ist
+hierbei nicht Teil der Aufgabe, es geht lediglich um die Berechnung einer Nachfolgegeneration.
 
-
-
-Unerwartete Komplexität lässt sich aus diesen 4 einfachen Regeln erzeugen:
-
+Für das Berechnen des NAchfolgezustands einers Gitters aus Zellen gelten die folgenden 4 Regeln:
+* Jede lebende Zelle mit zwei oder drei lebenden Nachbarn überlebt bis zur nächsten Generation
 * Jede lebende Zelle mit weniger als zwei lebenden Nachbarn stirbt an "Unterbevölkerung"
 * Jede lebende Zelle mit mehr als drei lebenden Nachbarn stirbt, an "Überbevölkerung"
-* Jede lebende Zelle mit zwei oder drei lebenden Nachbarn überlebt bis zur nächsten Generation
 * Jede tote Zelle mit genau drei lebenden Nachbarn wird zu einer lebenden Zelle
 
 Aufgabe des Katas ist es, Code zu schreiben, der eine Nachfolgegeneration durch Anwendung dieser 4 Regeln berechnet.
@@ -19,4 +18,4 @@ Aufgabe des Katas ist es, Code zu schreiben, der eine Nachfolgegeneration durch 
 ## Hinweise
 * "Benachbart" bedeutet horizontal, vertikal, oder diagonal angrenzend
 * Zur Vereinfachung der Testfälle beschränken wir das Gitter auf 3x3 Zellen. Das Gitter selbst soll aber so designed sein, dass Höhe und Breite variabel einstellbar sind
-* Die Zellen außerhalb des Gitters zählen als "tot" 
+* Zellen außerhalb des Gitters zählen als "tot" 

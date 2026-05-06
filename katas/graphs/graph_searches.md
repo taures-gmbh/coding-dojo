@@ -51,3 +51,6 @@ Formuliere die Suche allgemein, so dass nach beliebigen Knoten gesucht werden ka
 https://de.wikipedia.org/wiki/Tiefensuche
 
 Implementiere eine allgemeine Tiefensuche, so dass nach beliebigen Knoten gesucht werden kann, die eine frei bestimmbare Bedingung erfüllen.
+
+## Aufgabe 4
+Screibe eine Suche, die den Weg zwischen zwei Knoten heraussucht (egal ob per Breiten- oder Tiefensuche). Input sollten der Start- und der Endknoten sein. Ergebnis ist eine sortierte Liste aller besuchten Knoten (inkl. der Start- und Endknoten).

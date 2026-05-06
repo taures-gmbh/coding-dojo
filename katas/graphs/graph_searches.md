@@ -39,16 +39,15 @@ Die Farbe der Kanten ist für unsere Aufgabe jedoch nicht wichtig.
 
 ## Aufgabe 1
 
+https://de.wikipedia.org/wiki/Breitensuche
 Schreibe eine Breitensuche, welche alle Schauspieler eines Graphen einsammelt und als Ergebnis diese in einem Set zurück gibt.
 
 ## Aufgabe 2
 
-https://de.wikipedia.org/wiki/Breitensuche
-
-Formuliere die Suche allgemein, so dass nach beliebigen Konten gesucht werden kann,
+Formuliere die Suche allgemein, so dass nach beliebigen Knoten gesucht werden kann, die eine frei bestimmbare Bedingung erfüllen.
 
 ## Aufgabe 3
 
 https://de.wikipedia.org/wiki/Tiefensuche
 
-Implementiere eine allgemeine Tiefensuche.
+Implementiere eine allgemeine Tiefensuche, so dass nach beliebigen Knoten gesucht werden kann, die eine frei bestimmbare Bedingung erfüllen.
